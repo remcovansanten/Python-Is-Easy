@@ -27,6 +27,7 @@ for row in range(5):               #loop 5 times
  | |
 printing the above shapes
 '''
+print('part 2')
 for row in range(5):              #loop 5 times
     if row%2 == 0:                #if remainder is equal to zero when divided by 2
         for column in range(1, 6): #created a nested loop of range from 1 to 6

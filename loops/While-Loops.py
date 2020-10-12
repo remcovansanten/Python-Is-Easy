@@ -18,7 +18,7 @@ The while loop runs until the condition is True, updates the counter, prints the
 It comes out of the loop if the condition fails.
 '''
 while (counter <= 10):             #checks condition
-    print(counter)                 #print value of counter
+    print(counter),                 #print value of counter
     counter = counter + 1          #increments counter by 1
 
 counter = 1                       #sets counter variable equal to 1
@@ -34,7 +34,7 @@ print the sum of values from 1 to 100
 '''
 counter = 1                     #set counter equal to 1
 Sum = 0                         #intialize sum to 0
-while (counter <= 100):         #check the value of counter until it is less than or equal to 100
+while (counter <= 20):         #check the value of counter until it is less than or equal to 100
     print(counter)              #print the value of counter
     Sum = Sum + counter         #add the sum and counter
     counter = counter + 1       #increment counter by 1
