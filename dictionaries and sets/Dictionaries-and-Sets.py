@@ -6,13 +6,13 @@
 
 
 """
-A set is a data structure in python like a list to store a variety of hetrogenous unique elements.
-Hetrogenous means a set can contain primitive types  integer , string , float in it.
+A set is a data structure in python like a list to store a variety of heterogeneous unique elements.
+Heterogeneous means a set can contain primitive types  integer , string , float in it.
 Unique means that each element can occur only once in a set
 """
 
 # Declaring a set 'Sets' with different string values in it
-Sets={"Element1","Element2","Element1","Element4"}
+Sets = {"Element1", "Element2", "Element1", "Element4"}
 # Printing variable 'Sets' using the 'print' function
 print(Sets)
 # Output
@@ -33,7 +33,6 @@ if "Element1" in Sets:
 Yes
 """
 
-
 # Declaring a list variable 'CountryList' and assigning empty list to it by using '[]'
 CountryList = []
 
@@ -44,7 +43,8 @@ for i in range(5):
     # 'append(variable_name)' function is used here which adds a new element into the list 'CountryList'
     CountryList.append(Country)
 
-# A new set 'CountrySet' is created using the 'set(variable_name)' function by passing the variable 'CountryList' which will convert the 'CountryList' to a set
+# A new set 'CountrySet' is created using the 'set(variable_name)' function by passing the variable 'CountryList'
+# which will convert the 'CountryList' to a set
 CountrySet = set(CountryList)
 
 # Printing list 'CountryList'
@@ -73,23 +73,21 @@ if "Brazil" in CountrySet:
 attended
 """
 
-"""
-A dictionary is another data structure in python that also supports hetrogenous data to be stored inside it.
-Rather than using index like used in list , a dictionary supports key-value structure where the key is used like an index and value is stored besides it like how values are stored in a variable
-A dictionary should also contain unique keys and can contain even lists inside of it.
-"""
+"""A dictionary is another data structure in python that also supports heterogeneous data to be stored inside it. 
+Rather than using index like used in list , a dictionary supports key-value structure where the key is used like an 
+index and value is stored besides it like how values are stored in a variable A dictionary should also contain unique 
+keys and can contain even lists inside of it. """
 
-# Declaring a dictonary variable named 'Dictonary' and assigning keys and values to it
+# Declaring a dictionary variable named 'Dictionary' and assigning keys and values to it
 # "Key" , "Key1", "Key2" are the keys
 # "Value" , "Value1" , "Value2" are the corresponding values
-Dictionary={"Key":"Value","Key1":"Value1","Key2":"Value2"}
-# Printing the dictonary variable 'Dictionary'
+Dictionary = {"Key": "Value", "Key1": "Value1", "Key2": "Value2"}
+# Printing the dictionary variable 'Dictionary'
 print(Dictionary)
 # Output
 """
 {'Key': 'Value', 'Key1': 'Value1', 'Key2': 'Value2'}
 """
-
 
 # Declaring a list variable 'CountryList' and assigning empty list to it by using '[]'
 CountryList = []
@@ -101,19 +99,19 @@ for i in range(5):
     # 'append(variable_name)' function is used here which adds a new element into the list 'CountryList'
     CountryList.append(Country)
 
-
 # Declaring a dictionary variable 'CountryDictionary' and assigning empty dictionary to it by using '{}'
-CountryDictionary={}
+CountryDictionary = {}
 
-# A for loop is used using 'for in syntax' to access the elements of list 'CountryList' and stored it in local variable named 'Country'
+# A for loop is used using 'for in syntax' to access the elements of list 'CountryList'
+# and stored it in local variable named 'Country'
 for Country in CountryList:
     # If statement is used in order to check if the country name is present as a key in dictionary 'CountryDictionary'
     if Country in CountryDictionary:
-        # upon finding the key the value is accessed using 'DictionaryName[key_name]' synatx and incremented one to it
-        CountryDictionary[Country] +=1
+        # upon finding the key the value is accessed using 'DictionaryName[key_name]' syntax and incremented one to it
+        CountryDictionary[Country] += 1
     else:
-        # if the key is not found then creating a new key with country name and assigning one to it
-        # Notice how no error will be produced which was occuring in list when tried to access an element whcih didnt existed
+        # if the key is not found then creating a new key with country name and assigning one to it Notice how no
+        # error will be produced which was occurring in list when tried to access an element which didnt existed
         CountryDictionary[Country] = 1
 
 # Printing the dictionary variable 'CountryDictionary'
@@ -127,4 +125,10 @@ Please Enter Your Country: Brazil
 Please Enter Your Country: France
 {'France': 2, 'India': 1, 'Brazil': 1,'US': 1}
 """
-# No order is mainatined in dictionary as well
+# No order is maintained in dictionary as well
+
+
+# Joining SETS
+pycon = {2016: "Portland", 2018: "Cleveland"}
+europython = {2017: "Rimini", 2018: "Edinburgh", 2019: "Basel"}
+

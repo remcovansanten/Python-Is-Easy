@@ -11,14 +11,15 @@
 # File.close()
 
 # Create a list: sperate elements by a comma
-Countries = ["London", "Paris", "New York", "Utah", "IceLand"]
+# Countries = ["London", "Paris", "New York", "Utah", "IceLand"]
 # Let's call our list a VacationSpots
-VacationSpots = ["London", "Paris", "New York", "Utah", "IceLand"]
+# VacationSpots = ["London", "Paris", "New York", "Utah", "IceLand"]
 
 # Creat a file
 # The option "w" will create the file if it doesn't exist but will override it if it exists already
 # This will create the file at the same folder of your python file code
 VacationFile = open("VacationPlaces","w")
+
 
 # We loop over our list to take each element and put it inside our file
 for Spots in VacationSpots:
