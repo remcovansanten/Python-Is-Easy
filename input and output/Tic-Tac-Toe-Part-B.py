@@ -68,8 +68,8 @@ while(True): # True == True / is always true (We can also use while(1))
     # Display the player's turn
     print("Players turn: ",Player)
     # Ask user for input: to specify the desired row and column
-    MoveRow = int(input("Please enter the row\n"))       # Convert the row to integer
-    MoveColumn = int(input("Please enter the column\n")) # Convert the column to integer
+    MoveRow = int(input("Please enter the row (0, 1, 2)\n"))       # Convert the row to integer
+    MoveColumn = int(input("Please enter the column (0, 1, 2)\n")) # Convert the column to integer
     if Player == 1:
         # Make move for player 1
         # Access our current field

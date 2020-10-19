@@ -56,7 +56,7 @@ outputFile.close()
 
 
 # Reading all this data from the file
-inputFile = open("PaticipantData.txt","r")
+inputFile = open("ParticipantData.txt", "r")
 # Store all the file data into an inputList
 inputList = []
 # Read through the file line by line using a for loop
