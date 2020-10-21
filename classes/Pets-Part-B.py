@@ -106,7 +106,7 @@ class Pet:
 class Dog(Pet):
 
   # Define a function which refers to the class in order to initiliaze the attributes of the class
-  def __init__(self,name,age,hunger,playful,breed,FavoriteToy):
+  def __init__(self, name, age, hunger, playful, breed, FavoriteToy):
     # Call the initializer of the parent class with the proper parameters
     Pet.__init__(self,name,age,hunger,playful)
 
@@ -123,18 +123,21 @@ class Dog(Pet):
     # IF condition is True
     if self.playful == True:
       # Define the string which the function returns
-      return("Dog wants to play with " + self.FavoriteToy)
+      return("Dog " + self.name +  " wants to play with " + self.FavoriteToy)
 
     # ELSE condition
     else:
       # Define the string which the function returns
-      return("Dog doesn't want to play")
+      return("Dog " + self.name +" doesn't want to play")
 
 # Create an instance of the Dog class and assign values to the attributes
 huskyDog = Dog("Snowball",5,False,True,"Husky","Stick")
 
 # Assign to a variable the result returned by the wantsToPlay() function of the huskyDog instance
 Play = huskyDog.wantsToPlay()
+
+print(huskyDog.name)
+print(huskyDog.getName())
 
 # Print the value of the Play variable
 # This will print "Dog wants to play with Stick"
@@ -149,3 +152,4 @@ Play = huskyDog.wantsToPlay()
 # Print the value of the Play variable
 # This will print "Dog doesn't want to play"
 print(Play)
+print(huskyDog)
