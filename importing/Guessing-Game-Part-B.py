@@ -8,7 +8,7 @@
 from random import random
 
 # import 'clock' function of 'time' library
-from time import clock
+from time import perf_counter
 
 # Set the value of variable 'randVal' as a random number
 randVal = random() # 0.0 <=N <1.0
@@ -24,7 +24,7 @@ lower = 0.0
 ## guess = 0.5
 
 # Set the variable 'startTime' as the currect processor time
-startTime = clock()
+startTime = perf_counter()
 while(True):
     # set the variable 'guess' as the avarage of 'upper' and 'lower'
     guess = (upper+lower)/2
@@ -40,10 +40,10 @@ while(True):
         upper = guess
 
 # Set the variable 'endTime' as the currect processor time
-endTime = clock()
+endTime = perf_counter()
 
 # print the 'guess'
 print(guess)
 
 # print the time it took to run the loop
-print('It took us:', endTime-startTime,'seconds')
+print('It took us:', endTime - startTime, 'seconds')
